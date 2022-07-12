@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Javascript Quiz</title>
+</head>
+
+<body>
+    <header>        
+        <time>Time: <span id="time"></span></time>
+    </header>
+
+    <main>
+        <div id=start-card class="card">
+            <h2 id=title>Module 4 Quiz</h2>
+            <p>Try to answer to following questions within the time limit.<br><br>The more time left, the higher your score!</p><br>
+            <button id=start-button class="button">Start Quiz</button>
+        </div>
+
+        <div hidden id=question-card class="card">
+
+            <h2 id=question-text></h2>
+
+            <div id=quiz-options>
+                <button id=option0 class="button option-button"></button>
+                <button id=option1 class="button option-button"></button>
+                <button id=option2 class="button option-button"></button>
+                <button id=option3 class="button option-button"></button>
+            </div>
+
+            <div id=result-div>
+                <hr>
+                <p id=result-text></p>
+            </div>
+
+        </div>
+
+        <div hidden id=score-card class="card">
+            <h2>All done!</h2>
+            <p>You finished with <span id=score></span> second(s) remaining!.</p>
+            <form class="inline-form" id="submission-form">
+                  <label for="initials">Enter initials: </label>
+                  <input type="text" id="initials">
+                  <button id="submit-button" class="button">Submit</button>
+            </form>
+        </div>
+
+        <div hidden id=leaderboard-card class="card">
+            <h2>Highscores</h2>
+            <ol id="highscore-list">
+            </ol>
+        </div>
+
+    </main>
+    
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
